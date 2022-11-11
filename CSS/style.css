@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+.container{
+    width:500px;
+    height:500px;
+    padding:2px;
+    margin:40px auto;
+    border-radius: 10px;
+    border:2px solid grey;
+    text-align: center;
+    position: relative;
+}
+.slide{
+    display:none;
+}
+.slide img{
+    width:100%;
+    height:493px;
+    border-radius: 10px;
+}
+.prev, .next{
+    position:absolute;
+    cursor:pointer;
+    width:auto;
+    color:#fff;
+    font-weight:700;
+    font-size:17px;
+    border-radius: 2px;
+    transition:.7s ease;
+    top:50%;
+    padding:15px;
+    margin-top:-25px;
+}
+.next{
+    right:0;
+    border-radius:5px;
+}
+.prev{
+    left:0;
+}
+.prev:hover, .next:hover {
+    background-color: rgb(33, 31, 31);
+}
+.fade{
+    animation-name: thefading;
+    animation-duration:1.6s;
+}
+@keyframes thefading {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
